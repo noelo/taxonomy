@@ -1,0 +1,31 @@
+version: 2
+task_description: 'Teach the model the about lifepo4 batteries'
+created_by: noeloc
+domain: energy
+seed_examples:
+  - question: Do LFP batteries contain cobalt?
+    answer: |
+      LFP batteries are cobalt-free.
+  - question: What is the Maximum Cell charge voltage?
+    answer: |
+      Between 3.60 Volts to 3.65 Volts.
+  - question: What is the maximim number of charge cycles for a LFP battery?
+    answer: |
+      Usually around 10,000 cycles.
+  - question: What is the specific energy of LFP batteries?
+    answer: |
+      The specific energy of LFP batteries range between 125 Watt-hours per kilogram (Wh/kg) to 160 Wh/kg depending on the packing technology used.
+  - question: What is the nominal output of an LFP battery?
+    answer: |
+      The nominal output is 3.2 Volts.
+  - question: What other lithium-ion battery chemistries are there?
+    answer: |
+      cobalt (LiCo2) or manganese spinel (LiMn2O4) lithium-ion polymer batteries (LiPo battery)
+  - question: Are LiFePO4 a fire hazard?
+    answer: |
+      No, LiFePO4 cells are harder to ignite in the event of mishandling and the LiFePO4 battery does not decompose at high temperatures.
+document:
+  repo: https://github.com/noelo/taxonomy.git
+  commit: e1744af
+  patterns:
+    - lifepo4-info.md
