@@ -28,6 +28,6 @@ seed_examples:
       does not decompose at high temperatures.
 document:
   repo: https://github.com/noelo/taxonomy.git
-  commit: e1744af
+  commit: a225d24
   patterns:
     - lifepo4-info.md
