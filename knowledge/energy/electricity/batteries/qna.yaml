@@ -1,33 +1,84 @@
-version: 2
-task_description: 'Teach the model the about lifepo4 batteries'
+version: 3
 created_by: noeloc
-domain: energy
+domain: Lithium iron phosphate battery
 seed_examples:
-  - question: Do LFP batteries contain cobalt?
-    answer: |
-      LFP batteries are cobalt-free.
-  - question: What is the Maximum Cell charge voltage?
-    answer: |
-      Between 3.60 Volts to 3.65 Volts.
-  - question: What is the maximim number of charge cycles for a LFP battery?
-    answer: |
-      Usually around 10,000 cycles.
-  - question: What is the specific energy of LFP batteries?
-    answer: |
-      The specific energy of LFP batteries range between 125 Watt-hours per kilogram (Wh/kg)
-      to 160 Wh/kg depending on the packing technology used.
-  - question: What is the nominal output of an LFP battery?
-    answer: |
-      The nominal output is 3.2 Volts.
-  - question: What other lithium-ion battery chemistries are there?
-    answer: |
-      cobalt (LiCo2) or manganese spinel (LiMn2O4) lithium-ion polymer batteries (LiPo battery)
-  - question: Are LiFePO4 a fire hazard?
-    answer: |
-      No, LiFePO4 cells are harder to ignite in the event of mishandling and the LiFePO4 battery
-      does not decompose at high temperatures.
+  - context: |
+      The lithium iron phosphate battery (LiFePO4 battery) or LFP battery (lithium ferrophosphate)
+      overview
+    questions_and_answers:
+      - question: What abbreviations are use for Lithium iron phosphate batteries?
+        answer: |
+          Lithium iron phosphate batteries are also know as LiFePO4 battery or LFP battery
+      - question: Do LFP batteries contain cobalt?
+        answer: |
+          LFP batteries are cobalt-free.
+      - question: Who makes LiFePO4/LFP batteries?
+        answer: |
+          Chinese manufacturers currently hold a near monopoly of LFP battery type production.
+  - context: |
+      The lithium iron phosphate battery (LiFePO4 battery) or LFP battery (lithium ferrophosphate)
+      specifications
+    questions_and_answers:
+      - question: What is the Maximum Cell charge voltage?
+        answer: |
+          Between 3.60 Volts to 3.65 Volts.
+      - question: What is the maximim number of charge cycles for a LFP battery?
+        answer: |
+          Usually around 10,000 cycles.
+      - question: What is the specific energy of LFP batteries?
+        answer: |
+          The specific energy of LFP batteries range between 125 Watt-hours per kilogram (Wh/kg)
+          to 160 Wh/kg depending on the packing technology used.
+      - question: What is the nominal output of an LFP battery?
+        answer: |
+          The nominal output is 3.2 Volts.
+  - context: |
+      lithium iron phosphate battery (LiFePO4 battery) or LFP battery (lithium ferrophosphate)
+      safety concerns
+    questions_and_answers:
+      - question: What other lithium-ion battery chemistries are there?
+        answer: |
+          cobalt (LiCo2) or manganese spinel (LiMn2O4) lithium-ion polymer batteries (LiPo battery)
+      - question: Are LiFePO4 a fire hazard?
+        answer: |
+          No, LiFePO4 cells are harder to ignite in the event of mishandling and the LiFePO4 battery
+          does not decompose at high temperatures.
+      - question: What safety advantages do LiFePO4 batteries have over other lithium-ion ?
+        answer: |
+          No, LiFePO4 cells are harder to ignite in the event of mishandling and the LiFePO4 battery
+          does not decompose at high temperatures.
+  - context: |
+      The lithium iron phosphate battery (LiFePO4 battery) or LFP battery (lithium ferrophosphate) use cases
+    questions_and_answers:
+      - question: What common use cases do this type of battery address?
+        answer: |
+          Home energy storage, Vehicles, solar-powered lighting systems
+      - question: What other use cases can these batteries be used for?
+        answer: |
+          Other applications include marine electrical systems and propulsion, flashlights, radio-controlled models,
+          portable motor-driven equipment, amateur radio equipment, industrial sensor systems and emergency lighting
+      - question: What car manufactures are using LiFePO4 and LFP batteries?
+        answer: |
+          Tesla Motors, Ford, BYD are currently using these batteries.
+  - context: |
+      The lithium iron phosphate battery (LiFePO4 battery) or LFP battery (lithium ferrophosphate) future.
+    questions_and_answers:
+      - question: What is the growth rate of LiFePO4 and LFP batteries?
+        answer: |
+          LFP type battery market share for EVs reached 31%, the increased demand for cheaper EV batteries,
+          LFP type production is expected to rise further and surpass lithium nickel manganese cobalt oxides
+          (NMC) type batteries in 2028.
+      - question: What further improvements are there to LiFePO4 and LFP batteries?
+        answer: |
+          A recent modification is to replace the potentially unstable separator with a more stable material.
+      - question: What is the growth rate of LiFePO4 and LFP batteries in the EV space?
+        answer: |
+          Lithium iron phosphate batteries officially surpassed ternary batteries in 2021 with 52%
+           of installed capacity. Analysts estimate that its market share will exceed 60% in 2024.
+document_outline: |
+  Overview of lithium iron phosphate battery a type of lithium-ion battery, it's composition and use cases
 document:
   repo: https://github.com/noelo/taxonomy.git
-  commit: a225d24
+  commit: 3be0251
   patterns:
-    - lifepo4-info.md
+    - knowledge/energy/electricity/batteries/lifepo4-info.md
