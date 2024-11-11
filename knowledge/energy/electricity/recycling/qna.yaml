@@ -9962,9 +9962,10 @@ seed_examples:
       Member States with treatment facilities domestically)'
 version: 3
 document_outline: |
-  Overview of collection, treatment, recycling and disposal of batteries in the European Union (EU) with the aim of improving their environmental performance.
+  Overview of collection, treatment, recycling and disposal of batteries in the European Union 
+  (EU) with the aim of improving their environmental performance.
 document:
   repo: https://github.com/noelo/taxonomy.git
-  commit: 2a8124a
+  commit: 1c8810a
   patterns:
     - knowledge/energy/electricity/recycling/batteries-directive.md
